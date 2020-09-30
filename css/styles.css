@@ -1,0 +1,65 @@
+#title {
+  background-color: #ff4c68;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-large {
+  padding: 3% 15% 0;
+}
+
+/* Navigation Bar */
+
+#local-navbar {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.navbar {
+  padding: 0%;
+  margin-bottom: 4rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.8em;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.nav-item {
+  padding: 0% 1.2em;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.nav-link { 
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* Heading */
+
+.heading-row {
+  height: 34em;
+  overflow: hidden;
+}
+
+.heading-col button {
+  margin: 1.5em 1em 0 0;
+}
+
+.heading-large {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.phone-image {
+  width: 80%;
+  transform: rotate(20deg) translate(0, 5em);
+}
+
+/* Features */
+
+
