@@ -1,10 +1,22 @@
+<!-- 
+
+Notes 
+
+-   Most of our icons are decorative, and we're using Font Awesome JS
+    which takes care of aria-hidden automatically. Semantic icon info
+    is added through a title attribute.
+     fa-sm
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>TinDog</title>
+        <title>Tindog</title>
 
-        <!-- Bootstrap 4.5.2 -->
+        <!--
+            Bootstrap 4.5.2
+        -->
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -27,15 +39,22 @@
             crossorigin="anonymous"
         ></script>
 
-        <!-- Local styles -->
+        <!--
+            Local styles
+        -->
         <link rel="stylesheet" href="css/styles.css" />
 
-        <!-- Google Fonts -->
+        <!--
+            Google Fonts
+        -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,300;1,400&family=Ubuntu:wght@300;400;500;700&display=swap"
             rel="stylesheet"
         />
-        <!-- Font Awesome kit -->
+
+        <!--
+            Font Awesome kit
+        -->
         <script
             src="https://kit.fontawesome.com/d0a89abf48.js"
             crossorigin="anonymous"
@@ -44,7 +63,9 @@
 
     <body>
         <section id="title">
+            <!-- prettier-ignore-->
             <div class="container-fluid header-large">
+
                 <!-- Navigation Bar -->
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <a class="navbar-brand" href="">tindog</a>
@@ -53,7 +74,7 @@
                         type="button"
                         data-toggle="collapse"
                         data-target="#local-navbar"
-                        aria-controls="local-navbar"
+                        aria-controls="local-navbar
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
@@ -81,7 +102,10 @@
                         <h1 class="heading-large">
                             Meet new and interesting dogs nearby.
                         </h1>
-                        <button class="btn btn-dark btn-lg" type="button">
+                        <button
+                            class="btn btn-dark btn-lg download-button"
+                            type="button"
+                        >
                             <i
                                 class="fab fa-apple"
                                 title="Download for iOS devices."
@@ -89,7 +113,7 @@
                             Download
                         </button>
                         <button
-                            class="btn btn-outline-light btn-lg"
+                            class="btn btn-outline-light btn-lg download-button"
                             type="button"
                         >
                             <i
@@ -99,7 +123,7 @@
                             Download
                         </button>
                     </div>
-                    <div class="col-lg-4 phone-div">
+                    <div class="col-lg-4 phone-div d-none d-xl-block">
                         <img
                             src="images/iphone6.png"
                             alt="iphone-mockup"
@@ -113,20 +137,47 @@
         <!-- Features -->
 
         <section id="features">
-            <div class="row feature-row">
-                <div class="col-md-4 feature-col">
-                    <h3>Easy to use.</h3>
-                    <p>So easy to use, even your dog could do it.</p>
-                </div>
-    
-                <div class="col-md-4 feature-col">
-                    <h3>Elite Clientele</h3>
-                    <p>We have all the dogs, the greatest dogs.</p>
-                </div>
-    
-                <div class="col-md-4 feature-col">
-                    <h3>Guaranteed to work.</h3>
-                    <p>Find the love of your dog's life or your money back.</p>
+            <div class="container feature-container">
+                <div class="row feature-row align-items-center mx-auto">
+                    <div class="col-lg-4 feature-col d-flex flex-column">
+                        <i
+                            class="fas fa-check-circle feature-icon fa-4x mx-auto mt-1 mb-3"
+                        ></i>
+                        <h3 class="feature-heading mx-auto my-1">
+                            Easy to use.
+                        </h3>
+                        <p class="feature-desc mx-auto my-1">
+                            So easy to use, even your dog could do it.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-lg-4 pt-md-5 mt-md-5 pt-lg-0 mt-lg-0 feature-col d-flex flex-column"
+                    >
+                        <i
+                            class="fas fa-bullseye feature-icon fa-4x mx-auto mt-1 mb-3"
+                        ></i>
+                        <h3 class="feature-heading mx-auto my-1">
+                            Elite Clientele
+                        </h3>
+                        <p class="feature-desc mx-auto my-1">
+                            We have all the dogs, the greatest dogs.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-lg-4 pt-md-5 mt-md-5 pt-lg-0 mt-lg-0 feature-col d-flex flex-column"
+                    >
+                        <i
+                            class="fas fa-heart feature-icon fa-4x mx-auto mt-1 mb-3"
+                        ></i>
+                        <h3 class="feature-heading mx-auto my-1">
+                            Guaranteed to work.
+                        </h3>
+                        <p class="feature-desc mx-auto my-1">
+                            Find the love of your dog's life or your money back.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -163,8 +214,8 @@
 
             <h3>Chihuahua</h3>
             <h2>Free</h2>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
+            <p>Limited Likes Per Day</p>
+            <p>One Super Like Per Day</p>
             <p>Unlimited App Usage</p>
             <button type="button">Sign Up</button>
 
@@ -177,7 +228,7 @@
 
             <h3>Mastiff</h3>
             <h2>$99 / mo</h2>
-            <p>Pirority Listing</p>
+            <p>Priority Listing</p>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
