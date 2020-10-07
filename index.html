@@ -5,7 +5,6 @@ Notes
 -   Most of our icons are decorative, and we're using Font Awesome JS
     which takes care of aria-hidden automatically. Semantic icon info
     is added through a title attribute.
-     fa-sm
 -->
 
 <!DOCTYPE html>
@@ -64,7 +63,7 @@ Notes
     <body>
         <section id="title">
             <!-- prettier-ignore -->
-            <div class="container-fluid header-large">
+            <div class="container-fluid header-large dark-background">
 
                 <!-- Navigation Bar -->
                 <nav class="navbar navbar-expand-md navbar-dark">
@@ -98,7 +97,7 @@ Notes
                 <!-- Title -->
 
                 <div class="row heading-row">
-                    <div class="col-lg-8 heading-col">
+                    <div class="col-lg mb-5 mb-lg-0 heading-col">
                         <h1 class="heading-large">
                             Meet new and interesting dogs nearby.
                         </h1>
@@ -123,7 +122,7 @@ Notes
                             Download
                         </button>
                     </div>
-                    <div class="col-lg-4 phone-div d-none d-xl-block">
+                    <div class="col-lg">
                         <img
                             src="images/iphone6.png"
                             alt="iphone-mockup"
@@ -148,7 +147,7 @@ Notes
                         <h3 class="feature-heading mx-auto my-1">
                             Easy to use.
                         </h3>
-                        <p class="feature-desc mx-auto my-1">
+                        <p class="feature-description mx-auto my-1">
                             So easy to use, even your dog could do it.
                         </p>
                     </div>
@@ -162,7 +161,7 @@ Notes
                         <h3 class="feature-heading mx-auto my-1">
                             Elite Clientele
                         </h3>
-                        <p class="feature-desc mx-auto my-1">
+                        <p class="feature-description mx-auto my-1">
                             We have all the dogs, the greatest dogs.
                         </p>
                     </div>
@@ -176,7 +175,7 @@ Notes
                         <h3 class="feature-heading mx-auto my-1">
                             Guaranteed to work.
                         </h3>
-                        <p class="feature-desc mx-auto my-1">
+                        <p class="feature-description mx-auto my-1">
                             Find the love of your dog's life or your money back.
                         </p>
                     </div>
@@ -188,7 +187,7 @@ Notes
 
         <section id="testimonials">
             <div
-                class="container-fluid content-body-container testimonials-container"
+                class="container-fluid content-body-container testimonials-container dark-background"
             >
                 <div
                     id="testimonialsCarousel"
@@ -272,44 +271,150 @@ Notes
         <!-- Pricing -->
 
         <section id="pricing">
-            <h2>A Plan for Every Dog's Needs</h2>
-            <p>Simple and affordable price plans for your and your dog.</p>
+            <div class="container-fluid pricing-container">
+                <div class="row mb-5">
+                    <div class="col">
+                        <h2 class="pricing-header mb-3">
+                            A Plan for Every Dog's Needs
+                        </h2>
+                        <p class="pricing-subtitle">
+                            Simple and affordable price plans for you and your
+                            dog.
+                        </p>
+                    </div>
+                </div>
 
-            <h3>Chihuahua</h3>
-            <h2>Free</h2>
-            <p>Limited Likes Per Day</p>
-            <p>One Super Like Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+                <div class="row row-cols-lg-3 row-cols-md-2">
+                    <div class="col-md mb-sm-4 pb-sm-1 mb-lg-0">
+                        <div class="card pricing-card h-100">
+                            <div class="card-header">
+                                <h3 class="pricing-card-heading">Chihuahua</h3>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="pricing-card-price mb-3">Free</h3>
+                                <div
+                                    class="pricing-card-benefits-list flex-grow-1"
+                                >
+                                    <p>Limited Likes Per Day</p>
+                                    <p>One Super Like Per Day</p>
+                                    <p>Unlimited App Usage</p>
+                                </div>
+                                <button
+                                    class="btn btn-outline-dark btn-block"
+                                    type="button"
+                                >
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-            <h3>Labrador</h3>
-            <h2>$49 / mo</h2>
-            <p>Unlimited Matches</p>
-            <p>5 Super Likes Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+                    <div class="col-md mb-sm-4 pb-sm-1 mb-xl-0">
+                        <div class="card pricing-card h-100">
+                            <div class="card-header">
+                                <h3 class="pricing-card-heading">Labrador</h3>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="pricing-card-price mb-3">
+                                    $49 / mo
+                                </h3>
+                                <div
+                                    class="pricing-card-benefits-list flex-grow-1"
+                                >
+                                    <p>Unlimited Matches</p>
+                                    <p>5 Super Likes Per Day</p>
+                                    <p>Unlimited App Usage</p>
+                                </div>
+                                <button
+                                    class="btn btn-dark btn-block"
+                                    type="button"
+                                >
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-            <h3>Mastiff</h3>
-            <h2>$99 / mo</h2>
-            <p>Priority Listing</p>
-            <p>Unlimited Matches</p>
-            <p>25 Super Likes Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+                    <div class="col-md-12">
+                        <div class="card pricing-card h-100">
+                            <div class="card-header">
+                                <h3 class="pricing-card-heading">Mastiff</h3>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="pricing-card-price mb-3">
+                                    $99 / mo
+                                </h3>
+                                <div
+                                    class="pricing-card-benefits-list flex-grow-1"
+                                >
+                                    <p>Priority Listing</p>
+                                    <p>Unlimited Matches</p>
+                                    <p>25 Super Likes Per Day</p>
+                                    <p>Unlimited App Usage</p>
+                                </div>
+                                <button
+                                    class="btn btn-dark btn-block"
+                                    type="button"
+                                >
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Call to Action -->
 
         <section id="cta">
-            <h3>Find the True Love of Your Dog's Life Today.</h3>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
+            <div class="container-fluid content-body-container cta-container dark-background">
+                <h3 class="cta-header">
+                    Find the True Love of Your Dog's Life Today.
+                </h3>
+                <button
+                    class="btn btn-dark btn-lg download-button"
+                    type="button"
+                >
+                    <i
+                        class="fab fa-apple"
+                        title="Download for iOS devices."
+                    ></i>
+                    Download
+                </button>
+                <button
+                    class="btn btn-light btn-lg download-button"
+                    type="button"
+                >
+                    <i
+                        class="fab fa-google-play"
+                        title="Download for Android devices."
+                    ></i>
+                    Download
+                </button>
+            </div>
         </section>
 
         <!-- Footer -->
 
         <footer id="footer">
-            <p>© Copyright 2018 Tindog</p>
+            <div class="container-fluid footer-container">
+                <div class="row my-4">
+                    <div
+                        class="container social-links-container d-flex justify-content-around"
+                    >
+                        <i class="fab fa-twitter" title="twitter-link"></i>
+                        <i class="fab fa-facebook-f" title="facebook-link"></i>
+                        <i class="fab fa-instagram" title="instagram-link"></i>
+                        <i class="fas fa-envelope" title="email-link"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mx-auto">
+                        <p class="copyright-notice">© Copyright 2018 Tindog</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
